@@ -100,7 +100,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'Fullstack Engineer',
     company: '',
     quote:
-      'The execution roadmap it generates is actually realistic. It doesn''t just say "build the app", it breaks it down into sensible MVP phases. Good stuff.',
+      "The execution roadmap it generates is actually realistic. It doesn't just say \"build the app\", it breaks it down into sensible MVP phases. Good stuff.",
     avatar: 'DP',
     rating: 5,
   },

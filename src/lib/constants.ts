@@ -27,7 +27,7 @@ export const JINI_FEATURES: JiniFeature[] = [
     name: 'Full Blueprints',
     trademark: '',
     description:
-      'Doesn''t just spit out code. It plans the whole project — architecture, database design, API routes, and deployment.',
+      "Doesn't just spit out code. It plans the whole project — architecture, database design, API routes, and deployment.",
     icon: 'Layers',
   },
   {
