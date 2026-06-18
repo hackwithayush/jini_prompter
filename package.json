@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "prisma generate && next dev --webpack",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@ai-sdk/openai": "^3.0.68",

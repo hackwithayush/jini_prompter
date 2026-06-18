@@ -6,19 +6,20 @@ import { PrismaAdapter } from "@auth/prisma-adapter";
 import { prisma } from "@/lib/prisma";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  secret: process.env.AUTH_SECRET || "dummy-secret-for-build-only-change-in-production",
   adapter: PrismaAdapter(prisma),
   providers: [
     GitHub({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
+      clientId: process.env.GITHUB_ID || "dummy",
+      clientSecret: process.env.GITHUB_SECRET || "dummy",
     }),
     Google({
-      clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_SECRET,
+      clientId: process.env.GOOGLE_ID || "dummy",
+      clientSecret: process.env.GOOGLE_SECRET || "dummy",
     }),
     Resend({
       // Ensure you have RESEND_API_KEY set in .env
-      apiKey: process.env.RESEND_API_KEY,
+      apiKey: process.env.RESEND_API_KEY || "dummy",
       from: "no-reply@jiniprompter.com",
     }),
   ],
