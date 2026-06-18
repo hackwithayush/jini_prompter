@@ -12,6 +12,12 @@
 
 </div>
 
+<div align="center">
+  <a href="https://jini-ai.vercel.app">
+    <strong>✨ Try the Live Demo here ✨</strong>
+  </a>
+</div>
+
 ---
 
 ## The Problem
