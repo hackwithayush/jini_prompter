@@ -33,7 +33,7 @@ export function TestimonialsSection() {
           What early users are saying
         </h2>
         <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-          Don't just take my word for it. Here's what people who have tried the early version think about it.
+          Don&apos;t just take my word for it. Here&apos;s what people who have tried the early version think about it.
         </p>
       </AnimatedSection>
 

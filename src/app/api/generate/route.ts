@@ -267,18 +267,21 @@ ${memoryContext}
   });
 
   return result.toTextStreamResponse();
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("AI Generation Error:", error);
-    let message = error.message || "An unexpected error occurred during generation.";
-    let status = error.statusCode || 500;
+    const err = error as any;
+    let message = err.message || "An unexpected error occurred during generation.";
+    const status = err.statusCode || 500;
     
-    if (error.responseBody) {
+    if (err.responseBody) {
       try {
-        const parsed = typeof error.responseBody === 'string' ? JSON.parse(error.responseBody) : error.responseBody;
+        const parsed = typeof err.responseBody === 'string' ? JSON.parse(err.responseBody) : err.responseBody;
         if (parsed?.error?.message) {
           message = parsed.error.message;
         }
-      } catch (e) {}
+      } catch {
+        // Ignore parse error
+      }
     }
     
     return new Response(message, { status });

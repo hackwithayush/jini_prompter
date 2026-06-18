@@ -140,7 +140,7 @@ export function CTASection() {
 
             {/* Subheading */}
             <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-              Stop endlessly planning and start coding. It's completely free to try. What do you want to build today?
+              Stop endlessly planning and start coding. It&apos;s completely free to try. What do you want to build today?
             </p>
 
             {/* CTA Buttons */}

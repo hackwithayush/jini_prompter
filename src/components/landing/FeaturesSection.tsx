@@ -45,7 +45,7 @@ export default function FeaturesSection() {
             The good stuff
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white">
-            What's Included
+            What&apos;s Included
           </h2>
         </AnimatedSection>
 

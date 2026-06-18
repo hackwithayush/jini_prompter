@@ -45,7 +45,8 @@ async function main() {
     }
     console.log("\nDone streamObject!");
     
-  } catch (err: any) {
+  } catch (error: unknown) {
+    const err = error as any;
     console.error("\nError streamObject:", err);
     if (err.cause) console.error("Cause:", err.cause);
     if (err.data) console.error("Data:", err.data);
