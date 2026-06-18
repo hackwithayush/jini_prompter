@@ -24,9 +24,7 @@ import { Badge } from '@/components/ui/Badge';
 import { ThreeScene } from './ThreeScene';
 import { AgentOrbit } from './AgentOrbit';
 
-// ---------------------------------------------------------------------------
 // Icon Mapping
-// ---------------------------------------------------------------------------
 
 const iconMap: Record<string, LucideIcon> = {
   Crown,
@@ -43,9 +41,7 @@ const iconMap: Record<string, LucideIcon> = {
   Lightbulb,
 };
 
-// ---------------------------------------------------------------------------
 // AgentShowcase
-// ---------------------------------------------------------------------------
 
 export default function AgentShowcase() {
   const [hoveredAgent, setHoveredAgent] = useState<string | null>(null);

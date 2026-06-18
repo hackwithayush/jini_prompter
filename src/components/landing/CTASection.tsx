@@ -6,9 +6,7 @@ import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { GradientText } from '@/components/ui/GradientText';
 import { Button } from '@/components/ui/Button';
 
-// ---------------------------------------------------------------------------
 // CTASection Component
-// ---------------------------------------------------------------------------
 
 interface Particle {
   id: number;

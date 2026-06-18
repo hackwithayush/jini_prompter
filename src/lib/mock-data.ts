@@ -1,13 +1,7 @@
-// ============================================================================
-// JINI PROMPTER — Mock Data & Sample Content
-// The World's First AI Blueprint Architect
-// ============================================================================
 
 import { PricingTier, Testimonial } from './types';
 
-// ---------------------------------------------------------------------------
 // Pricing Tiers
-// ---------------------------------------------------------------------------
 
 export const PRICING_TIERS: PricingTier[] = [
   {
@@ -67,9 +61,7 @@ export const PRICING_TIERS: PricingTier[] = [
   },
 ];
 
-// ---------------------------------------------------------------------------
 // Testimonials
-// ---------------------------------------------------------------------------
 
 export const TESTIMONIALS: Testimonial[] = [
   {
@@ -134,9 +126,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
 ];
 
-// ---------------------------------------------------------------------------
 // Sample Blueprint Content (Used in Blueprint Preview Section)
-// ---------------------------------------------------------------------------
 
 export const SAMPLE_BLUEPRINT_INPUT =
   'Build an AI-powered fitness coaching app that creates personalized workout plans using computer vision to analyze form and provide real-time feedback';
@@ -210,9 +200,7 @@ The global fitness app market is projected to reach $15.96B by 2028 (CAGR 21.6%)
 - Partnership integrations`,
 };
 
-// ---------------------------------------------------------------------------
 // Hero Section Stats
-// ---------------------------------------------------------------------------
 
 export const HERO_STATS = [
   { id: 'stat-blueprints', value: '10K+', label: 'Blueprints Generated' },

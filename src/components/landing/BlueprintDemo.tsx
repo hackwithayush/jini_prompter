@@ -15,9 +15,7 @@ import { logger } from '@/utils/logger';
 import { staggeredExecution } from '@/utils/requestQueue';
 import { optimizeImage, stageImage } from '@/lib/utils/imageOptimization';
 
-// ---------------------------------------------------------------------------
 // Tab Configuration
-// ---------------------------------------------------------------------------
 
 const TABS = [
   { key: 'executiveSummary', label: 'Executive Summary', icon: FileCode },
@@ -28,9 +26,7 @@ const TABS = [
 
 type TabKey = (typeof TABS)[number]['key'];
 
-// ---------------------------------------------------------------------------
 // Markdown Renderer — lightweight inline parser
-// ---------------------------------------------------------------------------
 
 function renderMarkdown(text: string) {
   const lines = text.split('\n');
@@ -116,15 +112,11 @@ function renderInline(text: string) {
   });
 }
 
-// ---------------------------------------------------------------------------
 // Typewriter Hook (Removed: Vercel AI SDK handles streaming natively)
-// ---------------------------------------------------------------------------
 
 import { useCompletion } from '@ai-sdk/react';
 
-// ---------------------------------------------------------------------------
 // BlueprintDemo Component
-// ---------------------------------------------------------------------------
 
 export function BlueprintDemo() {
   const [activeTab, setActiveTab] = useState<TabKey>('executiveSummary');

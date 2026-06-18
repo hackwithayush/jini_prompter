@@ -1,9 +1,7 @@
 import { createOpenAI } from '@ai-sdk/openai';
 import { createOpenRouter } from '@openrouter/ai-sdk-provider';
 
-// ---------------------------------------------------------------------------
 // 1. Providers
-// ---------------------------------------------------------------------------
 
 export const localProvider = createOpenAI({
   baseURL: process.env.LOCAL_LLM_URL || 'http://localhost:11434/v1',
@@ -18,9 +16,7 @@ export const openRouter = createOpenRouter({
   },
 });
 
-// ---------------------------------------------------------------------------
 // 2. Hybrid Routing Engine
-// ---------------------------------------------------------------------------
 const USE_OLLAMA = process.env.USE_OLLAMA !== 'false'; // Default to true
 const USE_OPENROUTER = process.env.USE_OPENROUTER === 'true';
 const DEFAULT_FALLBACK = 'llama3.3';
@@ -45,9 +41,7 @@ function resolveModel(modelName: string | undefined, defaultLocal: string) {
   return localProvider(DEFAULT_FALLBACK);
 }
 
-// ---------------------------------------------------------------------------
 // 3. V2.1 Specific Agent Models
-// ---------------------------------------------------------------------------
 
 // Orchestration Layer
 export const OrchestratorModel = resolveModel(process.env.ORCHESTRATOR_MODEL, 'deepseek-r1');

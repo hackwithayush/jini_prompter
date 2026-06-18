@@ -37,9 +37,7 @@ import {
   SAMPLE_BLUEPRINT_SECTIONS,
 } from '@/lib/mock-data';
 
-// ---------------------------------------------------------------------------
 // Icon Map — maps agent icon string names to actual components
-// ---------------------------------------------------------------------------
 
 const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   Crown,
@@ -56,9 +54,7 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   Lightbulb,
 };
 
-// ---------------------------------------------------------------------------
 // Tab config
-// ---------------------------------------------------------------------------
 
 const TABS = [
   { id: 'summary', label: 'Executive Summary', icon: FileText },
@@ -76,9 +72,7 @@ const TAB_CONTENT: Record<TabId, string> = {
   roadmap: SAMPLE_BLUEPRINT_SECTIONS.roadmap,
 };
 
-// ---------------------------------------------------------------------------
 // Suggestion chips — sample prompts per category
-// ---------------------------------------------------------------------------
 
 const SUGGESTION_CHIPS = [
   {
@@ -113,9 +107,7 @@ const SUGGESTION_CHIPS = [
   },
 ];
 
-// ---------------------------------------------------------------------------
 // Simple markdown-like renderer
-// ---------------------------------------------------------------------------
 
 function MarkdownContent({ content }: { content: string }) {
   const lines = content.split('\n');
@@ -193,9 +185,7 @@ function MarkdownContent({ content }: { content: string }) {
   );
 }
 
-// ============================================================================
 // MAIN PAGE COMPONENT
-// ============================================================================
 
 export default function GeneratePage() {
   const [inputText, setInputText] = useState('');

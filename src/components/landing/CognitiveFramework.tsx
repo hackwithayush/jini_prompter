@@ -15,9 +15,7 @@ import { GlassCard } from '@/components/ui/GlassCard';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { Badge } from '@/components/ui/Badge';
 
-// ---------------------------------------------------------------------------
 // Icon Mapping
-// ---------------------------------------------------------------------------
 
 const iconMap: Record<string, LucideIcon> = {
   Search,
@@ -28,9 +26,7 @@ const iconMap: Record<string, LucideIcon> = {
   Zap,
 };
 
-// ---------------------------------------------------------------------------
 // Connecting Arrow — horizontal between stages on desktop
-// ---------------------------------------------------------------------------
 
 function ConnectorArrow() {
   return (
@@ -41,9 +37,7 @@ function ConnectorArrow() {
   );
 }
 
-// ---------------------------------------------------------------------------
 // Vertical Connector — between stages on mobile / tablet
-// ---------------------------------------------------------------------------
 
 function VerticalConnector() {
   return (
@@ -56,9 +50,7 @@ function VerticalConnector() {
   );
 }
 
-// ---------------------------------------------------------------------------
 // CognitiveFramework
-// ---------------------------------------------------------------------------
 
 export default function CognitiveFramework() {
   return (
@@ -134,9 +126,7 @@ export default function CognitiveFramework() {
   );
 }
 
-// ---------------------------------------------------------------------------
 // StageCard — individual stage rendering
-// ---------------------------------------------------------------------------
 
 interface StageCardProps {
   stage: {

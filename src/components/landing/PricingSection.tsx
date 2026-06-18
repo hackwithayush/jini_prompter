@@ -9,9 +9,7 @@ import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { PRICING_TIERS } from '@/lib/mock-data';
 
-// ---------------------------------------------------------------------------
 // Helpers
-// ---------------------------------------------------------------------------
 
 function getAnnualPrice(monthlyPrice: string): string {
   const num = parseFloat(monthlyPrice.replace('$', ''));
@@ -19,9 +17,7 @@ function getAnnualPrice(monthlyPrice: string): string {
   return `$${Math.round(num * 0.8)}`;
 }
 
-// ---------------------------------------------------------------------------
 // PricingSection Component
-// ---------------------------------------------------------------------------
 
 export function PricingSection() {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -89,9 +85,7 @@ export function PricingSection() {
   );
 }
 
-// ---------------------------------------------------------------------------
 // Individual Pricing Card
-// ---------------------------------------------------------------------------
 
 interface PricingCardProps {
   tier: (typeof PRICING_TIERS)[number];

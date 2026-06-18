@@ -1,13 +1,7 @@
-// ============================================================================
-// JINI PROMPTER — Constants & Definitions
-// The World's First AI Blueprint Architect
-// ============================================================================
 
 import { NavLink, CognitiveStage, JiniFeature, AgentDefinition } from './types';
 
-// ---------------------------------------------------------------------------
 // Navigation
-// ---------------------------------------------------------------------------
 
 export const NAV_LINKS: NavLink[] = [
   { label: 'Wish Engine™', href: '/#hero' },
@@ -17,9 +11,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Dashboard', href: '/dashboard' },
 ];
 
-// ---------------------------------------------------------------------------
 // JINI Core Features (Trademarked Product Pillars)
-// ---------------------------------------------------------------------------
 
 export const JINI_FEATURES: JiniFeature[] = [
   {
@@ -72,9 +64,7 @@ export const JINI_FEATURES: JiniFeature[] = [
   },
 ];
 
-// ---------------------------------------------------------------------------
 // 6-Stage Cognitive Processing Framework
-// ---------------------------------------------------------------------------
 
 export const COGNITIVE_STAGES: CognitiveStage[] = [
   {
@@ -131,9 +121,7 @@ export const COGNITIVE_STAGES: CognitiveStage[] = [
   },
 ];
 
-// ---------------------------------------------------------------------------
 // 18 AI Agent Definitions (Agent Forge™ V2)
-// ---------------------------------------------------------------------------
 
 export const AGENT_DEFINITIONS: AgentDefinition[] = [
   // --- Strategic Layer ---

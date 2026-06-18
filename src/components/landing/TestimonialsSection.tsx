@@ -5,9 +5,7 @@ import { GlassCard } from '@/components/ui/GlassCard';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { TESTIMONIALS } from '@/lib/mock-data';
 
-// ---------------------------------------------------------------------------
 // Avatar gradient presets (cycled per testimonial)
-// ---------------------------------------------------------------------------
 
 const AVATAR_GRADIENTS = [
   'from-indigo-500 to-purple-500',
@@ -18,9 +16,7 @@ const AVATAR_GRADIENTS = [
   'from-violet-500 to-fuchsia-500',
 ];
 
-// ---------------------------------------------------------------------------
 // TestimonialsSection Component
-// ---------------------------------------------------------------------------
 
 export function TestimonialsSection() {
   // Duplicate testimonials for seamless infinite loop
@@ -87,9 +83,7 @@ export function TestimonialsSection() {
   );
 }
 
-// ---------------------------------------------------------------------------
 // Individual Testimonial Card
-// ---------------------------------------------------------------------------
 
 interface TestimonialCardProps {
   testimonial: (typeof TESTIMONIALS)[number];

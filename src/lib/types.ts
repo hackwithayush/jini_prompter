@@ -1,11 +1,5 @@
-// ============================================================================
-// JINI PROMPTER — Type Definitions
-// The World's First AI Blueprint Architect
-// ============================================================================
 
-// ---------------------------------------------------------------------------
 // Blueprint & Core Generation Types
-// ---------------------------------------------------------------------------
 
 export interface Blueprint {
   id: string;
@@ -72,9 +66,7 @@ export interface MonetizationStrategy {
   projectedRevenue: string;
 }
 
-// ---------------------------------------------------------------------------
 // Agent System Types
-// ---------------------------------------------------------------------------
 
 export interface Agent {
   id: string;
@@ -130,9 +122,7 @@ export interface AgentDNA {
   executionModes?: string[];
 }
 
-// ---------------------------------------------------------------------------
 // Pricing & Testimonials
-// ---------------------------------------------------------------------------
 
 export interface PricingTier {
   name: string;
@@ -154,9 +144,7 @@ export interface Testimonial {
   rating: number;
 }
 
-// ---------------------------------------------------------------------------
 // Navigation & UI
-// ---------------------------------------------------------------------------
 
 export interface NavLink {
   label: string;

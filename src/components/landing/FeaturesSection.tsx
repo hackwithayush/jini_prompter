@@ -13,9 +13,7 @@ import { JINI_FEATURES } from '@/lib/constants';
 import { GlassCard } from '@/components/ui/GlassCard';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 
-// ---------------------------------------------------------------------------
 // Icon Mapping — resolves string icon names from constants to components
-// ---------------------------------------------------------------------------
 
 const iconMap: Record<string, LucideIcon> = {
   Dna,
@@ -26,9 +24,7 @@ const iconMap: Record<string, LucideIcon> = {
   Rocket,
 };
 
-// ---------------------------------------------------------------------------
 // FeaturesSection
-// ---------------------------------------------------------------------------
 
 export default function FeaturesSection() {
   return (
