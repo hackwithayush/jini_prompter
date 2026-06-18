@@ -1,0 +1,510 @@
+// ============================================================================
+// JINI PROMPTER — Constants & Definitions
+// The World's First AI Blueprint Architect
+// ============================================================================
+
+import { NavLink, CognitiveStage, JiniFeature, AgentDefinition } from './types';
+
+// ---------------------------------------------------------------------------
+// Navigation
+// ---------------------------------------------------------------------------
+
+export const NAV_LINKS: NavLink[] = [
+  { label: 'Wish Engine™', href: '/#hero' },
+  { label: 'Agent Forge™', href: '/#agents' },
+  { label: 'Blueprint OS™', href: '/#blueprint' },
+  { label: 'Pricing', href: '/#pricing' },
+  { label: 'Dashboard', href: '/dashboard' },
+];
+
+// ---------------------------------------------------------------------------
+// JINI Core Features (Trademarked Product Pillars)
+// ---------------------------------------------------------------------------
+
+export const JINI_FEATURES: JiniFeature[] = [
+  {
+    id: 'prompt-dna',
+    name: 'Prompt DNA',
+    trademark: '™',
+    description:
+      'Enterprise-grade prompt engineering that generates prompts with Purpose, Context, Objectives, Requirements, Constraints, and Quality Standards built in.',
+    icon: 'Dna',
+  },
+  {
+    id: 'blueprint-os',
+    name: 'Blueprint OS',
+    trademark: '™',
+    description:
+      'Complete project architecture generation — from executive summary to database design, API specs, deployment strategy, and growth plan.',
+    icon: 'Layers',
+  },
+  {
+    id: 'agent-forge',
+    name: 'Agent Forge',
+    trademark: '™',
+    description:
+      '12 specialized AI agents working in parallel — CEO, Product, Design, Developer, Security, Marketing, and more — simulating an entire company.',
+    icon: 'Bot',
+  },
+  {
+    id: 'execution-matrix',
+    name: 'Execution Matrix',
+    trademark: '™',
+    description:
+      'Step-by-step roadmaps with milestones, team structure, technology stack recommendations, budget estimates, and deployment strategies.',
+    icon: 'GitBranch',
+  },
+  {
+    id: 'reality-validator',
+    name: 'Reality Validator',
+    trademark: '™',
+    description:
+      'AI-powered risk assessment, market validation, competitor analysis, and feasibility scoring to ground your ideas in reality.',
+    icon: 'ShieldCheck',
+  },
+  {
+    id: 'idea-to-unicorn',
+    name: 'Idea to Unicorn',
+    trademark: '™',
+    description:
+      'End-to-end transformation from a single sentence to a complete company blueprint — business model, monetization, growth strategy, and scaling plan.',
+    icon: 'Rocket',
+  },
+];
+
+// ---------------------------------------------------------------------------
+// 6-Stage Cognitive Processing Framework
+// ---------------------------------------------------------------------------
+
+export const COGNITIVE_STAGES: CognitiveStage[] = [
+  {
+    number: 1,
+    name: 'Intent Discovery',
+    description:
+      'Identifies user goals, hidden objectives, industry context, business opportunities, and complexity level.',
+    outputs: ['Intent Analysis Report', 'Opportunity Map', 'Complexity Score'],
+    icon: 'Search',
+  },
+  {
+    number: 2,
+    name: 'Requirement Extraction',
+    description:
+      'Deep analysis of target users, business goals, constraints, technical requirements, and success metrics.',
+    outputs: ['Requirements Document', 'User Personas', 'Success Criteria'],
+    icon: 'FileSearch',
+  },
+  {
+    number: 3,
+    name: 'Research Layer',
+    description:
+      'Collects market intelligence, industry standards, competitor insights, and technical best practices.',
+    outputs: [
+      'Market Analysis',
+      'Competitor Matrix',
+      'Tech Recommendations',
+    ],
+    icon: 'Globe',
+  },
+  {
+    number: 4,
+    name: 'Blueprint Creation',
+    description:
+      'Generates executive summary, features, user flows, architecture, APIs, database, and security specifications.',
+    outputs: ['Full Blueprint', 'Architecture Diagram', 'API Spec'],
+    icon: 'PenTool',
+  },
+  {
+    number: 5,
+    name: 'Execution Planning',
+    description:
+      'Creates step-by-step roadmap, milestones, team structure, technology stack, budget, and deployment strategy.',
+    outputs: ['Roadmap', 'Budget Estimate', 'Team Plan'],
+    icon: 'CalendarCheck',
+  },
+  {
+    number: 6,
+    name: 'Optimization',
+    description:
+      'Recommends performance improvements, cost reductions, AI automation opportunities, and scaling strategies.',
+    outputs: ['Optimization Report', 'Scaling Plan', 'ROI Projection'],
+    icon: 'Zap',
+  },
+];
+
+// ---------------------------------------------------------------------------
+// 18 AI Agent Definitions (Agent Forge™ V2)
+// ---------------------------------------------------------------------------
+
+export const AGENT_DEFINITIONS: AgentDefinition[] = [
+  // --- Strategic Layer ---
+  {
+    id: 'ceo',
+    name: 'CEO Agent',
+    layer: 'Strategic',
+    role: 'Business Strategy',
+    description: 'Creates business strategy, market positioning, and competitive advantages.',
+    icon: 'Crown',
+    color: '#818cf8',
+    capabilities: ['Market Analysis', 'Business Modeling', 'Risk Assessment'],
+    visionCapabilities: ['Chart Interpretation', 'Diagram Interpretation'],
+    expectedOutputs: ['Business Strategy Document', 'Monetization Plan'],
+    tools: ['Market Research Tool', 'Financial Modeler'],
+    reasoningStyle: 'Analytical',
+    communicationStyle: 'Executive',
+    confidenceThreshold: 0.85,
+    delegationRules: ['Delegate UI to UX Agent', 'Delegate Code to Developer Agent'],
+    collaboratesWith: ['Product', 'Finance', 'Orchestrator'],
+    executionModes: ['single_agent', 'consensus'],
+    specializationScore: 90
+  },
+  {
+    id: 'product',
+    name: 'Product Agent',
+    layer: 'Strategic',
+    role: 'Features & Roadmap',
+    description: 'Creates feature prioritization, product roadmap, and user stories.',
+    icon: 'Package',
+    color: '#a78bfa',
+    capabilities: ['Feature Prioritization', 'User Stories', 'Roadmap Planning'],
+    visionCapabilities: ['UI Component Detection', 'Document Understanding'],
+    expectedOutputs: ['Product Roadmap', 'Feature Specs'],
+    tools: ['Roadmap Generator', 'User Story Mapper'],
+    reasoningStyle: 'Pragmatic',
+    communicationStyle: 'Clear',
+    confidenceThreshold: 0.8,
+    delegationRules: ['Delegate Design to Design Agent'],
+    collaboratesWith: ['CEO', 'UX', 'Developer'],
+    executionModes: ['single_agent', 'parallel_agents'],
+    specializationScore: 85
+  },
+  {
+    id: 'marketing',
+    name: 'Marketing Agent',
+    layer: 'Strategic',
+    role: 'Growth Strategy',
+    description: 'Creates marketing strategy, content plan, and distribution channels.',
+    icon: 'Megaphone',
+    color: '#fbbf24',
+    capabilities: ['Campaign Planning', 'SEO Strategy', 'Content Creation'],
+    visionCapabilities: ['Brand Consistency Analysis', 'Visual Search'],
+    expectedOutputs: ['Marketing Plan', 'Ad Copy'],
+    tools: ['SEO Analyzer', 'Copywriter API'],
+    reasoningStyle: 'Creative',
+    communicationStyle: 'Persuasive',
+    confidenceThreshold: 0.8,
+    delegationRules: ['Delegate Visuals to Image Agent'],
+    collaboratesWith: ['Sales', 'Design'],
+    executionModes: ['single_agent'],
+    specializationScore: 85
+  },
+  {
+    id: 'finance',
+    name: 'Finance Agent',
+    layer: 'Strategic',
+    role: 'Monetization',
+    description: 'Creates revenue models, financial projections, and funding strategies.',
+    icon: 'DollarSign',
+    color: '#34d399',
+    capabilities: ['Financial Modeling', 'Pricing Strategy', 'Budgeting'],
+    visionCapabilities: ['Chart Interpretation', 'Document Understanding'],
+    expectedOutputs: ['Financial Projections', 'Pricing Model'],
+    tools: ['Spreadsheet Engine', 'Pricing Calculator'],
+    reasoningStyle: 'Analytical',
+    communicationStyle: 'Formal',
+    confidenceThreshold: 0.9,
+    delegationRules: ['Delegate Market Data to Research Agent'],
+    collaboratesWith: ['CEO', 'Sales'],
+    executionModes: ['single_agent'],
+    specializationScore: 90
+  },
+  {
+    id: 'innovation',
+    name: 'Innovation Agent',
+    layer: 'Strategic',
+    role: 'Unique Opportunities',
+    description: 'Suggests breakthrough features, emerging tech, and market gaps.',
+    icon: 'Lightbulb',
+    color: '#38bdf8',
+    capabilities: ['Trend Analysis', 'Brainstorming', 'Lateral Thinking'],
+    visionCapabilities: ['Infographic Interpretation', 'Visual Search'],
+    expectedOutputs: ['Innovation Report', 'Blue Ocean Strategy'],
+    tools: ['Trend Scraper', 'Idea Generator'],
+    reasoningStyle: 'Creative',
+    communicationStyle: 'Inspirational',
+    confidenceThreshold: 0.7,
+    delegationRules: ['Delegate Validation to Research Agent'],
+    collaboratesWith: ['CEO', 'Product'],
+    executionModes: ['single_agent', 'parallel_agents'],
+    specializationScore: 85
+  },
+  {
+    id: 'sales',
+    name: 'Sales Agent',
+    layer: 'Strategic',
+    role: 'Conversion Systems',
+    description: 'Creates sales funnels, pricing strategies, and conversion optimization.',
+    icon: 'TrendingUp',
+    color: '#a3e635',
+    capabilities: ['Funnel Design', 'Conversion Optimization', 'Lead Generation'],
+    visionCapabilities: ['Chart Interpretation', 'Layout Extraction'],
+    expectedOutputs: ['Sales Funnel', 'Conversion Plan'],
+    tools: ['Funnel Builder', 'CRM Simulator'],
+    reasoningStyle: 'Strategic',
+    communicationStyle: 'Persuasive',
+    confidenceThreshold: 0.85,
+    delegationRules: ['Delegate Traffic to Marketing Agent'],
+    collaboratesWith: ['Marketing', 'Finance'],
+    executionModes: ['single_agent'],
+    specializationScore: 85
+  },
+
+  // --- Domain Layer (Previously part of the core 12, mapping to Domain/Strategic) ---
+  {
+    id: 'ux',
+    name: 'UX Agent',
+    layer: 'Domain',
+    role: 'User Experience',
+    description: 'Creates user flows, wireframes, and interaction patterns.',
+    icon: 'MousePointerClick',
+    color: '#c084fc',
+    capabilities: ['Wireframing', 'User Flows', 'Information Architecture'],
+    visionCapabilities: ['UI Component Detection', 'Layout Extraction', 'Screenshot Understanding'],
+    expectedOutputs: ['User Flow Diagram', 'Wireframe Specs'],
+    tools: ['Wireframe Generator', 'Flow Mapper'],
+    reasoningStyle: 'Empathic',
+    communicationStyle: 'Visual',
+    confidenceThreshold: 0.85,
+    delegationRules: ['Delegate Styling to Design Agent'],
+    collaboratesWith: ['Product', 'Design'],
+    executionModes: ['single_agent', 'parallel_agents'],
+    specializationScore: 95
+  },
+  {
+    id: 'design',
+    name: 'Design Agent',
+    layer: 'Domain',
+    role: 'Visual Direction',
+    description: 'Creates design systems, visual identity, and brand guidelines.',
+    icon: 'Palette',
+    color: '#e879f9',
+    capabilities: ['Brand Identity', 'UI Design', 'Design Systems'],
+    visionCapabilities: ['Brand Consistency Analysis', 'Visual Search'],
+    expectedOutputs: ['Design System', 'Brand Guidelines'],
+    tools: ['Color Palette Generator', 'Typography Selector'],
+    reasoningStyle: 'Aesthetic',
+    communicationStyle: 'Visual',
+    confidenceThreshold: 0.85,
+    delegationRules: ['Delegate Image Gen to Image Agent'],
+    collaboratesWith: ['UX', 'Marketing'],
+    executionModes: ['single_agent'],
+    specializationScore: 95
+  },
+  {
+    id: 'developer',
+    name: 'Developer Agent',
+    layer: 'Domain',
+    role: 'Code Architecture',
+    description: 'Creates technical architecture, code structure, and API design.',
+    icon: 'Code2',
+    color: '#f472b6',
+    capabilities: ['System Architecture', 'API Design', 'Code Generation'],
+    visionCapabilities: ['Diagram Interpretation', 'OCR'],
+    expectedOutputs: ['Architecture Diagram', 'API Spec', 'Code Snippets'],
+    tools: ['Code Editor', 'API Tester', 'UML Generator'],
+    reasoningStyle: 'Logical',
+    communicationStyle: 'Technical',
+    confidenceThreshold: 0.9,
+    delegationRules: ['Delegate Infra to DevOps Agent'],
+    collaboratesWith: ['Product', 'DevOps', 'Security'],
+    executionModes: ['single_agent', 'sequential_pipeline'],
+    specializationScore: 90
+  },
+  {
+    id: 'ai',
+    name: 'AI Agent',
+    layer: 'Domain',
+    role: 'AI Workflows',
+    description: 'Creates AI integration strategies, model selection, and training plans.',
+    icon: 'Brain',
+    color: '#fb7185',
+    capabilities: ['Model Selection', 'Prompt Engineering', 'RAG Design'],
+    visionCapabilities: ['Diagram Interpretation', 'Document Understanding'],
+    expectedOutputs: ['AI Architecture', 'Prompt Library'],
+    tools: ['Model Evaluator', 'Vector DB Planner'],
+    reasoningStyle: 'Analytical',
+    communicationStyle: 'Technical',
+    confidenceThreshold: 0.9,
+    delegationRules: ['Delegate Data Prep to Data Agent'],
+    collaboratesWith: ['Developer', 'Data'],
+    executionModes: ['single_agent'],
+    specializationScore: 95
+  },
+
+  // --- Intelligence Layer ---
+  {
+    id: 'data',
+    name: 'Data Agent',
+    layer: 'Intelligence',
+    role: 'Analytics & Forecasting',
+    description: 'Analyzes numbers, forecasts trends, and creates metrics.',
+    icon: 'Database',
+    color: '#60a5fa',
+    capabilities: ['Data Analysis', 'Forecasting', 'Metric Definition'],
+    visionCapabilities: ['Chart Interpretation', 'OCR'],
+    expectedOutputs: ['Data Schema', 'Analytics Dashboard Plan'],
+    tools: ['SQL Generator', 'Data Visualizer'],
+    reasoningStyle: 'Quantitative',
+    communicationStyle: 'Data-driven',
+    confidenceThreshold: 0.95,
+    delegationRules: ['Delegate Research to Research Agent'],
+    collaboratesWith: ['AI', 'Finance', 'Operations'],
+    executionModes: ['single_agent', 'parallel_agents'],
+    specializationScore: 98
+  },
+
+  // --- Support & Operations Layer ---
+  {
+    id: 'research',
+    name: 'Research Agent',
+    layer: 'Support',
+    role: 'Knowledge Gathering',
+    description: 'Gathers information, validates sources, and generates knowledge.',
+    icon: 'Search',
+    color: '#94a3b8',
+    capabilities: ['Web Scraping', 'Competitor Analysis', 'Literature Review'],
+    visionCapabilities: ['Document Understanding', 'OCR', 'Visual Search'],
+    expectedOutputs: ['Research Report', 'Competitor Matrix'],
+    tools: ['Web Browser', 'Academic Search API'],
+    reasoningStyle: 'Objective',
+    communicationStyle: 'Informative',
+    confidenceThreshold: 0.9,
+    delegationRules: ['Delegate Synthesis to Orchestrator'],
+    collaboratesWith: ['Data', 'Innovation'],
+    executionModes: ['single_agent', 'parallel_agents'],
+    specializationScore: 98
+  },
+  {
+    id: 'devops',
+    name: 'DevOps Agent',
+    layer: 'Support',
+    role: 'Infrastructure & CI/CD',
+    description: 'Designs infrastructure, CI/CD pipelines, and deployment strategy.',
+    icon: 'Server',
+    color: '#0ea5e9',
+    capabilities: ['Cloud Architecture', 'CI/CD Setup', 'Containerization'],
+    visionCapabilities: ['Diagram Interpretation'],
+    expectedOutputs: ['Deployment Plan', 'Infra-as-Code Spec'],
+    tools: ['Cloud Resource Planner', 'Pipeline Configurator'],
+    reasoningStyle: 'Systematic',
+    communicationStyle: 'Technical',
+    confidenceThreshold: 0.9,
+    delegationRules: ['Delegate App Logic to Developer Agent'],
+    collaboratesWith: ['Developer', 'Security'],
+    executionModes: ['single_agent', 'sequential_pipeline'],
+    specializationScore: 95
+  },
+  {
+    id: 'operations',
+    name: 'Operations Agent',
+    layer: 'Support',
+    role: 'Business Execution',
+    description: 'Optimizes workflows, internal tooling, and operational efficiency.',
+    icon: 'Settings',
+    color: '#64748b',
+    capabilities: ['Process Mapping', 'Efficiency Optimization', 'Tool Selection'],
+    visionCapabilities: ['Diagram Interpretation', 'Document Understanding'],
+    expectedOutputs: ['SOPs', 'Process Diagrams'],
+    tools: ['Workflow Mapper', 'SOP Generator'],
+    reasoningStyle: 'Pragmatic',
+    communicationStyle: 'Clear',
+    confidenceThreshold: 0.85,
+    delegationRules: ['Delegate Data Analysis to Data Agent'],
+    collaboratesWith: ['CEO', 'Finance'],
+    executionModes: ['single_agent'],
+    specializationScore: 90
+  },
+  {
+    id: 'image',
+    name: 'Image Agent',
+    layer: 'Support',
+    role: 'Visual Asset Specialist',
+    description: 'Generates complex visual assets, diagrams, and interpretations.',
+    icon: 'Image',
+    color: '#f43f5e',
+    capabilities: ['Image Generation', 'Diagram Creation', 'Asset Manipulation'],
+    visionCapabilities: ['Video Frame Analysis', 'Image Analysis', 'Brand Consistency Analysis'],
+    expectedOutputs: ['Images', 'Mermaid Diagrams', 'SVGs'],
+    tools: ['Image Gen API', 'Diagram Engine'],
+    reasoningStyle: 'Visual',
+    communicationStyle: 'Visual',
+    confidenceThreshold: 0.9,
+    delegationRules: ['Delegate Layouts to UX'],
+    collaboratesWith: ['Design', 'Marketing'],
+    executionModes: ['single_agent'],
+    specializationScore: 98
+  },
+
+  // --- Orchestration Layer ---
+  {
+    id: 'orchestrator',
+    name: 'Orchestrator Agent',
+    layer: 'Orchestration',
+    role: 'Agent Operations',
+    description: 'Manages workflow routing, agent coordination, and execution modes.',
+    icon: 'Network',
+    color: '#8b5cf6',
+    capabilities: ['Task Delegation', 'Workflow Routing', 'Consensus Building'],
+    visionCapabilities: ['Diagram Interpretation'],
+    expectedOutputs: ['Execution Plan', 'Final Consolidated Output'],
+    tools: ['Agent Router', 'Task Queue'],
+    reasoningStyle: 'Holistic',
+    communicationStyle: 'Directive',
+    confidenceThreshold: 0.95,
+    delegationRules: ['Delegate EVERYTHING to specific agents'],
+    collaboratesWith: ['ALL'],
+    executionModes: ['hierarchical', 'sequential_pipeline', 'parallel_agents'],
+    specializationScore: 70
+  },
+
+  // --- Governance Layer ---
+  {
+    id: 'qa',
+    name: 'QA Agent',
+    layer: 'Governance',
+    role: 'Quality Validation',
+    description: 'Validates outputs, checks consistency, and scores quality.',
+    icon: 'CheckCircle2',
+    color: '#22d3ee',
+    capabilities: ['Automated Testing', 'Quality Scoring', 'Consistency Checks'],
+    visionCapabilities: ['Screenshot Understanding', 'Layout Extraction'],
+    expectedOutputs: ['QA Report', 'Validation Score'],
+    tools: ['Test Runner', 'Linter'],
+    reasoningStyle: 'Critical',
+    communicationStyle: 'Objective',
+    confidenceThreshold: 0.95,
+    delegationRules: ['Delegate Fixes to Developer Agent'],
+    collaboratesWith: ['Orchestrator', 'Developer'],
+    executionModes: ['single_agent', 'consensus'],
+    specializationScore: 95
+  },
+  {
+    id: 'security',
+    name: 'Security Agent',
+    layer: 'Governance',
+    role: 'Vulnerability Analysis',
+    description: 'Finds security vulnerabilities, compliance gaps, and threat vectors.',
+    icon: 'Shield',
+    color: '#f97316',
+    capabilities: ['Threat Modeling', 'Compliance Checking', 'Code Review'],
+    visionCapabilities: ['Architecture Diagram Review', 'Document Understanding'],
+    expectedOutputs: ['Security Audit', 'Threat Matrix'],
+    tools: ['Vulnerability Scanner', 'Compliance Checker'],
+    reasoningStyle: 'Skeptical',
+    communicationStyle: 'Direct',
+    confidenceThreshold: 0.95,
+    delegationRules: ['Delegate Architecture Fixes to DevOps'],
+    collaboratesWith: ['Developer', 'DevOps'],
+    executionModes: ['single_agent', 'parallel_agents'],
+    specializationScore: 95
+  }
+];
