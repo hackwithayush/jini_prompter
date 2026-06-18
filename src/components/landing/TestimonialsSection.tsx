@@ -30,11 +30,10 @@ export function TestimonialsSection() {
       {/* Heading */}
       <AnimatedSection className="text-center mb-16 px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-          Trusted by builders worldwide
+          What early users are saying
         </h2>
         <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
-          Thousands of founders, engineers, and product leaders use JINI to turn
-          ambition into execution.
+          Don't just take my word for it. Here's what people who have tried the early version think about it.
         </p>
       </AnimatedSection>
 

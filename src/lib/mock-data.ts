@@ -66,62 +66,42 @@ export const PRICING_TIERS: PricingTier[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
-    name: 'Sarah Chen',
-    role: 'CTO',
-    company: 'NexaFlow',
+    name: 'Sarah C.',
+    role: 'Frontend Dev',
+    company: 'Freelance',
     quote:
-      'JINI generated a complete technical architecture for our SaaS platform in minutes. What would have taken our team weeks of planning was done in one prompt.',
+      'I usually spend an hour writing boilerplate prompts for new side projects. This gave me the whole architecture and database schema in like 30 seconds. Honestly pretty crazy.',
     avatar: 'SC',
     rating: 5,
   },
   {
     id: '2',
-    name: 'Marcus Rodriguez',
-    role: 'Founder',
-    company: 'LaunchPad AI',
+    name: 'Marcus R.',
+    role: 'Indie Hacker',
+    company: '',
     quote:
-      'The Blueprint OS is incredible. I described my AI startup idea and received an investor-ready business plan with technical specs, market analysis, and a 12-month roadmap.',
+      'The multi-agent thing actually works well. Having it split into separate "bots" for code vs strategy makes the output way less generic than just asking ChatGPT directly.',
     avatar: 'MR',
     rating: 5,
   },
   {
     id: '3',
-    name: 'Emily Zhang',
-    role: 'Product Manager',
-    company: 'Streamline',
+    name: 'Emily Z.',
+    role: 'Product Designer',
+    company: '',
     quote:
-      'Agent Forge changed how we approach product development. Having 12 AI agents analyze our product from every angle caught blind spots we never would have found.',
+      'Used this to generate a feature spec for a client. Saved me from staring at a blank page for two days straight.',
     avatar: 'EZ',
     rating: 5,
   },
   {
     id: '4',
-    name: 'David Park',
-    role: 'Solo Developer',
-    company: 'Independent',
+    name: 'David P.',
+    role: 'Fullstack Engineer',
+    company: '',
     quote:
-      'As a solo developer, JINI is like having an entire team. The execution plans are so detailed I can start coding immediately without any ambiguity.',
+      'The execution roadmap it generates is actually realistic. It doesn''t just say "build the app", it breaks it down into sensible MVP phases. Good stuff.',
     avatar: 'DP',
-    rating: 5,
-  },
-  {
-    id: '5',
-    name: 'Aisha Patel',
-    role: 'VP Engineering',
-    company: 'CloudScale',
-    quote:
-      'We use JINI to validate new product ideas before committing engineering resources. The Reality Validator has saved us from three costly mistakes.',
-    avatar: 'AP',
-    rating: 5,
-  },
-  {
-    id: '6',
-    name: 'James Morrison',
-    role: 'Startup Advisor',
-    company: 'Y Ventures',
-    quote:
-      'I recommend JINI to every founder I mentor. The blueprints it generates are more thorough than what most early-stage startups produce with months of planning.',
-    avatar: 'JM',
     rating: 5,
   },
 ];

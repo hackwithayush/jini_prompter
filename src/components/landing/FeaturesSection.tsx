@@ -42,10 +42,10 @@ export default function FeaturesSection() {
         {/* ── Section heading ── */}
         <AnimatedSection className="text-center mb-16">
           <p className="text-sm tracking-widest uppercase text-zinc-400 mb-4">
-            Powered by
+            The good stuff
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-white">
-            JINI Intelligence
+            What's Included
           </h2>
         </AnimatedSection>
 

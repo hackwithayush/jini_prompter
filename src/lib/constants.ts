@@ -15,51 +15,51 @@ export const NAV_LINKS: NavLink[] = [
 
 export const JINI_FEATURES: JiniFeature[] = [
   {
-    id: 'prompt-dna',
-    name: 'Prompt DNA',
-    trademark: '™',
+    id: 'better-prompts',
+    name: 'Actually Good Prompts',
+    trademark: '',
     description:
-      'Enterprise-grade prompt engineering that generates prompts with Purpose, Context, Objectives, Requirements, Constraints, and Quality Standards built in.',
+      'Turns your vague one-liners into detailed prompts that LLMs actually understand, complete with constraints and context.',
     icon: 'Dna',
   },
   {
-    id: 'blueprint-os',
-    name: 'Blueprint OS',
-    trademark: '™',
+    id: 'full-blueprints',
+    name: 'Full Blueprints',
+    trademark: '',
     description:
-      'Complete project architecture generation — from executive summary to database design, API specs, deployment strategy, and growth plan.',
+      'Doesn''t just spit out code. It plans the whole project — architecture, database design, API routes, and deployment.',
     icon: 'Layers',
   },
   {
-    id: 'agent-forge',
-    name: 'Agent Forge',
-    trademark: '™',
+    id: 'specialized-agents',
+    name: 'Specialist Bots',
+    trademark: '',
     description:
-      '12 specialized AI agents working in parallel — CEO, Product, Design, Developer, Security, Marketing, and more — simulating an entire company.',
+      'Instead of one generic AI trying to do everything, it routes tasks to specialized agents for code, design, and strategy.',
     icon: 'Bot',
   },
   {
-    id: 'execution-matrix',
-    name: 'Execution Matrix',
-    trademark: '™',
+    id: 'execution-plan',
+    name: 'Step-by-Step Plans',
+    trademark: '',
     description:
-      'Step-by-step roadmaps with milestones, team structure, technology stack recommendations, budget estimates, and deployment strategies.',
+      'Breaks down the build process into realistic phases so you know exactly what to code first without getting overwhelmed.',
     icon: 'GitBranch',
   },
   {
-    id: 'reality-validator',
-    name: 'Reality Validator',
-    trademark: '™',
+    id: 'reality-check',
+    name: 'Reality Check',
+    trademark: '',
     description:
-      'AI-powered risk assessment, market validation, competitor analysis, and feasibility scoring to ground your ideas in reality.',
+      'Scores your idea on how clear and feasible it actually is, and points out obvious technical risks before you start building.',
     icon: 'ShieldCheck',
   },
   {
-    id: 'idea-to-unicorn',
-    name: 'Idea to Unicorn',
-    trademark: '™',
+    id: 'idea-to-code',
+    name: 'Idea to Repo',
+    trademark: '',
     description:
-      'End-to-end transformation from a single sentence to a complete company blueprint — business model, monetization, growth strategy, and scaling plan.',
+      'Gets you out of the planning phase faster so you can just start coding the fun stuff.',
     icon: 'Rocket',
   },
 ];

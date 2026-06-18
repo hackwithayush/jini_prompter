@@ -68,10 +68,10 @@ export default function CognitiveFramework() {
         {/* ── Section heading ── */}
         <AnimatedSection className="text-center mb-20">
           <Badge variant="glow" className="mb-4">
-            Cognitive Framework
+            Under the Hood
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mt-4">
-            Six Stages of Intelligence
+            How the Pipeline Actually Works
           </h2>
         </AnimatedSection>
 

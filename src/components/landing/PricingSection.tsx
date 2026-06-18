@@ -34,10 +34,10 @@ export function PricingSection() {
             Pricing
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Simple, transparent pricing
+            How much does it cost?
           </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
-            Start free. Scale when you&apos;re ready.
+            No funny business. Start for free, upgrade if you want more.
           </p>
         </AnimatedSection>
 

@@ -134,14 +134,13 @@ export function CTASection() {
             {/* Heading */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               <GradientText animate>
-                Ready to Build Your Blueprint?
+                Ready to start building?
               </GradientText>
             </h2>
 
             {/* Subheading */}
             <p className="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-              Join thousands of builders using JINI to turn ideas into reality.
-              Your next big thing starts with a single prompt.
+              Stop endlessly planning and start coding. It's completely free to try. What do you want to build today?
             </p>
 
             {/* CTA Buttons */}

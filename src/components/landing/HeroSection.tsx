@@ -113,9 +113,9 @@ export default function HeroSection() {
             className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.1] font-serif"
             {...fadeUp(0.1)}
           >
-            Turn Any Wish Into A<br/>
+            Stop Writing<br/>
             <GradientText from="#c4b5fd" to="#9d4edd">
-              Production-Ready Reality
+              Boilerplate Prompts
             </GradientText>
           </motion.h1>
         </motion.div>
@@ -125,8 +125,7 @@ export default function HeroSection() {
           className="mt-8 text-lg md:text-xl text-[#c4b5fd] max-w-2xl mx-auto leading-relaxed"
           {...fadeUp(0.38)}
         >
-          Generate expert prompts, business blueprints, AI agents,
-          marketing systems, and execution plans.
+          Just describe what you want to build in plain English. JINI figures out the architecture, the database schema, and writes the master prompt for you.
         </motion.p>
 
         {/* ─── Wish Box ─── */}
