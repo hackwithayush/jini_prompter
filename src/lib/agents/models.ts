@@ -17,28 +17,29 @@ export const openRouter = createOpenRouter({
 });
 
 // 2. Hybrid Routing Engine
-const USE_OLLAMA = process.env.USE_OLLAMA !== 'false'; // Default to true
-const USE_OPENROUTER = process.env.USE_OPENROUTER === 'true';
-const DEFAULT_FALLBACK = 'llama3.3';
+const USE_OLLAMA = process.env.USE_OLLAMA === 'true'; 
 
 /**
  * Routes the model request based on environment priority:
- * 1. Ollama Local
- * 2. OpenRouter
- * 3. Fallback
+ * 1. If USE_OLLAMA is explicitly true, use local Ollama.
+ * 2. If OPENROUTER_API_KEY is present, use OpenRouter (Cloud).
+ * 3. Fallback to local Ollama if no keys are provided.
  */
 function resolveModel(modelName: string | undefined, defaultLocal: string) {
   const target = modelName || defaultLocal;
   
+  // Force local if explicitly requested
   if (USE_OLLAMA) {
     return localProvider(target);
   }
   
-  if (USE_OPENROUTER && process.env.OPENROUTER_API_KEY) {
+  // Default to cloud if key exists
+  if (process.env.OPENROUTER_API_KEY) {
     return openRouter(target);
   }
   
-  return localProvider(DEFAULT_FALLBACK);
+  // Fallback to local
+  return localProvider(target);
 }
 
 // 3. V2.1 Specific Agent Models
