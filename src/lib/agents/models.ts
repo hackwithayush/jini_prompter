@@ -70,9 +70,9 @@ export const QaModel = resolveModel(process.env.QA_MODEL, 'deepseek-r1');
 export const SecurityModel = resolveModel(process.env.SECURITY_MODEL, 'deepseek-r1');
 
 // Shared Vision Layer
-export const VisionModel = USE_OPENROUTER && process.env.OPENROUTER_API_KEY
+export const VisionModel = process.env.OPENROUTER_API_KEY && !USE_OLLAMA
   ? openRouter(process.env.IMAGE_MODEL || 'qwen/qwen-2.5-vl-7b')
   : localProvider(process.env.IMAGE_MODEL || 'qwen2.5-vl');
 
 // Fallback Model for unspecified tasks
-export const FallbackModel = localProvider(process.env.MODEL_FALLBACK || DEFAULT_FALLBACK);
+export const FallbackModel = resolveModel(process.env.MODEL_FALLBACK, 'llama3.3');
